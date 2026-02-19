@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>meuladomistico</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<header>
+    <img src="foto.jpg" alt="Foto" class="foto">
+    <h1>Nara | Umbanda - baralho cigano</h1>
+    <p class="sub">Cartomante • Mentora Espiritual • Professora de Baralho Cigano </p>
+    <a href="https://wa.me/5521979788216" class="botao">Agendar Consulta</a>
+</header>
+
+<section class="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+        Minha missão é orientar caminhos através da espiritualidade,
+        da energia e da sabedoria ancestral. Trabalho com Baralho Cigano,
+        aconselhamento espiritual, terapias holísticas e formação de novos profissionais.
+    </p>
+</section>
+
+<section class="servicos">
+    <h2>Serviços</h2>
+
+    <div class="cards">
+        <div class="card" onclick="abrirModal('cartomancia')">
+            <h3>🔮 Cartomancia</h3>
+            <p>Leituras profundas para clareza emocional e espiritual.</p>
+        </div>
+
+        <div class="card" onclick="abrirModal('baralho')">
+            <h3>🃏 Baralho Cigano</h3>
+            <p>Interpretação intuitiva com orientação detalhada.</p>
+        </div>
+
+        <div class="card" onclick="abrirModal('terapia')">
+            <h3>✨ Terapia Holística</h3>
+            <p>Equilíbrio energético e harmonização espiritual.</p>
+        </div>
+
+        <div class="card" onclick="abrirModal('curso')">
+            <h3>📚 Curso de Baralho Cigano</h3>
+            <p>Formação completa para iniciantes e avançados.</p>
+        </div>
+    </div>
+</section>
+
+<section class="videos">
+    <h2>Vídeos Espirituais</h2>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/IWOsFOjbG38"
+        frameborder="0"
+        allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/z3Fw3dlPDIk"
+        frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="depoimentos">
+    <h2>Depoimentos</h2>
+
+    <div class="depo-cards">
+
+        <div class="depo-card">
+            <p>"Minha vida melherou muito após a consulta."</p>
+            <span>- Maria E.</span>
+        </div>
+
+
+        <div class="depo-card">
+            <p>"Leitura extremamente precisa e acolhedora."</p>
+            <span>- Juliana R.</span>
+        </div>
+
+        <div class="depo-card">
+            <p>"Curso maravilhoso e muito completo."</p>
+            <span>- Carla M.</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="contato">
+    <h2>Redes Sociais</h2>
+
+    <div class="redes">
+
+        <a href="https://wa.me/5521979788216" target="_blank" class="social whatsapp">
+            WhatsApp
+        </a>
+
+        <a href="https://instagram.com/meuladomistico" target="_blank" class="social instagram">
+            Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@meuladomistico" target="_blank" class="social tiktok">
+            TikTok
+        </a>
+
+        <a href="https://t.me/meuladomistico" target="_blank" class="social telegram">
+            Telegram
+        </a>
+
+        <a href="https://www.youtube.com/@meuladomistico6222" target="_blank" class="social youtube">
+            YouTube
+        </a>
+
+    </div>
+</section>
+
+<section class="cartas" data-aos="fade-up">
+    <h2>Baralho Cigano</h2>
+
+    <div class="cartas-container">
+
+        <div class="carta">
+            <div class="carta-inner">
+                <div class="carta-front">🔮</div>
+                <div class="carta-back">Amor</div>
+            </div>
+        </div>
+
+        <div class="carta">
+            <div class="carta-inner">
+                <div class="carta-front">🌙</div>
+                <div class="carta-back">Espiritualidade</div>
+            </div>
+        </div>
+
+        <div class="carta">
+            <div class="carta-inner">
+                <div class="carta-front">⭐</div>
+                <div class="carta-back">Prosperidade</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <h2 id="modalTitulo"></h2>
+        <p id="modalTexto"></p>
+    </div>
+</div>
+
+<script>
+function abrirModal(tipo) {
+
+    const titulo = document.getElementById("modalTitulo");
+    const texto = document.getElementById("modalTexto");
+
+    if (tipo === "cartomancia") {
+        titulo.innerText = "Cartomancia";
+        texto.innerText = "A Cartomancia é uma leitura profunda que traz clareza emocional, espiritual e direcionamento para decisões importantes da sua vida.";
+    }
+
+    if (tipo === "baralho") {
+        titulo.innerText = "Baralho Cigano";
+        texto.innerText = "O Baralho Cigano revela caminhos, energias e situações ocultas, oferecendo orientação detalhada e intuitiva.";
+    }
+
+    if (tipo === "terapia") {
+        titulo.innerText = "Terapia Holística";
+        texto.innerText = "A Terapia Holística promove equilíbrio energético, harmonização espiritual e alinhamento interior.";
+    }
+
+    if (tipo === "curso") {
+        titulo.innerText = "Curso de Baralho Cigano";
+        texto.innerText = "Curso completo para formação profissional, com teoria, prática e desenvolvimento intuitivo.";
+    }
+
+    document.getElementById("modal").style.display = "flex";
+}
+
+function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+
+<footer>
+    <p>© 2026 Lúcius L. Gomes - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

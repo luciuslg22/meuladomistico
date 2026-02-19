@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: radial-gradient(circle at top, #2b0040, #0d0014);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* ESTRELAS ANIMADAS */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+    animation: moveStars 100s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 10000px 5000px; }
+}
+
+header {
+    padding: 80px 20px;
+}
+
+.foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(246, 255, 0);
+    box-shadow: 0 0 25px rgba(255, 170, 0, 0.6);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: gold;
+    margin: 20px 0 10px;
+}
+
+.sub {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, gold, #b8860b);
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+
+.botao-outline {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 28px;
+    border: 2px solid gold;
+    color: gold;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.sobre {
+    max-width: 500px;
+    margin: auto;
+}
+
+.servicos {
+    background: rgba(255,255,255,0.05);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    background: #000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+.contato {
+    padding: 60px 20px;
+    background: rgba(0,0,0,0.4);
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid;
+}
+
+.social:hover {
+    transform: scale(1.08);
+}
+
+/* CORES OFICIAIS */
+
+.whatsapp {
+    border-color: #25D366;
+    color: #25D366;
+}
+
+.whatsapp:hover {
+    box-shadow: 0 0 15px #25D366;
+}
+
+.instagram {
+    border-color: #E1306C;
+    color: #E1306C;
+}
+
+.instagram:hover {
+    box-shadow: 0 0 15px #E1306C;
+}
+
+
+.facebook:hover {
+    box-shadow: 0 0 15px #1877F2;
+}
+
+.tiktok {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tiktok:hover {
+    box-shadow: 0 0 15px #ffffff;
+}
+
+.telegram {
+    border-color: #0088cc;
+    color: #0088cc;
+}
+
+.telegram:hover {
+    box-shadow: 0 0 15px #0088cc;
+}
+
+.youtube {
+    border-color: #FF0000;
+    color: #FF0000;
+}
+
+.youtube:hover {
+    box-shadow: 0 0 15px #FF0000;
+}
+
+.email {
+    border-color: gold;
+    color: gold;
+}
+
+.email:hover {
+    box-shadow: 0 0 15px gold;
+}
+
+.videos {
+    padding: 60px 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-container iframe {
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+.depoimentos {
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.05);
+}
+
+.depo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.depo-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.depo-card:hover {
+    box-shadow: 0 0 20px gold;
+    transform: translateY(-5px);
+}
+
+.depo-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: gold;
+}
+
+.cartas {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cartas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.carta {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.carta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.carta:hover .carta-inner {
+    transform: rotateY(180deg);
+}
+
+.carta-front,
+.carta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    backface-visibility: hidden;
+}
+
+.carta-front {
+    background: linear-gradient(45deg, #2c003e, #4b0082);
+    font-size: 40px;
+}
+
+.carta-back {
+    background: gold;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #2c003e, #4b0082);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 25px gold;
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    color: gold;
+}
+
+.depoimento {
+    cursor: pointer;
+    transition: 0.3s;
+}

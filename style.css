@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background: radial-gradient(circle at top, #2b0040, #0d0014);
+    background: radial-gradient(circle at top, #000000, #000000);
     overflow-x: hidden;
     text-align: center;
 }
@@ -109,7 +109,7 @@ section {
 footer {
     padding: 20px;
     font-size: 14px;
-    background: #000;
+    background: #0c0c0c;
 }
 
 /* RESPONSIVO */
@@ -333,6 +333,26 @@ footer {
     text-align: center;
     box-shadow: 0 0 25px gold;
     animation: aparecer 0.4s ease;
+        /* 👇 ISSO RESOLVE */
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 10px;
+}
+
+#modalTitulo {
+    color: #ffffff;
+}
+
+#modalTexto strong {
+    color: #ffd700; /* amarelo dourado */
 }
 
 @keyframes aparecer {
@@ -352,4 +372,113 @@ footer {
 .depoimento {
     cursor: pointer;
     transition: 0.3s;
+}
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre imagem e nome */
+    margin-top: 15px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.autor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd700; /* dourado quando passar o mouse */
+}
+.estatisticas {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contador-box h2 {
+    font-size: 40px;
+    color: #ffd700;
+}
+
+.consultas {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.consultas-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.consulta-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.consulta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+.descricao {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
+    margin-top: 10px;
+}
+
+.consulta-card.ativo .descricao {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.consulta-card {
+    cursor: pointer;
+}
+
+.btn-modal {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffd700;
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-modal:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+.modal-botao {
+    text-align: center;
+}
+
+.img-mentoria {
+    width: 300px;      /* tamanho fixo */
+    max-width: 80%;    /* não ultrapassa o modal */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* centraliza */
+    border-radius: 12px; /* opcional */
 }

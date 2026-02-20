@@ -29,33 +29,116 @@
 </section>
 
 <section class="servicos">
-    <h2>Serviços</h2>
+    <h2>Serviços:</h2>
 
     <div class="cards">
-        <div class="card" onclick="abrirModal('cartomancia')">
+        <div class="card" onclick="toggleDescricao(this)">
             <h3>🔮 Cartomancia</h3>
-            <p>Leituras profundas para clareza emocional e espiritual.</p>
+            <p>Leituras profundas para clareza emocional e espiritual com o baralho cigano.</p>
         </div>
 
-        <div class="card" onclick="abrirModal('baralho')">
-            <h3>🃏 Baralho Cigano</h3>
-            <p>Interpretação intuitiva com orientação detalhada.</p>
+        <div class="card" onclick="toggleDescricao(this)">
+            <h3>🃏 Mentoria Espiritual </h3>
+            <p>Curso para aprender do zero como se conectar com sua espiritualidade interior sem depender de terceiros.</p>    
         </div>
 
-        <div class="card" onclick="abrirModal('terapia')">
+        <div class="card" onclick="toggleDescricao(this)">
             <h3>✨ Terapia Holística</h3>
             <p>Equilíbrio energético e harmonização espiritual.</p>
         </div>
 
-        <div class="card" onclick="abrirModal('curso')">
+        <div class="card" onclick="toggleDescricao(this)">
             <h3>📚 Curso de Baralho Cigano</h3>
             <p>Formação completa para iniciantes e avançados.</p>
         </div>
     </div>
 </section>
 
+<section class="consultas">
+    <h2>Consultas Disponíveis:</h2>
+
+    <div class="consultas-cards">
+
+        <div class="consulta-card" onclick="abrirModal('completa')">
+            <h3>🔮 Consulta Completa</h3>
+            <p class="resumo">Um mergulho profundo em você e na sua alma</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('geral')">
+            <h3>🌙 Consulta Geral</h3>
+            <p class="resumo">
+                Consulta para buscar alinhar o externo com o interno na sua vida. Essa consulta é o equilíbrio das balanças</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('amor')">
+            <h3>💘 Consulta do Amor</h3>
+            <p class="resumo">Consulta indicada para namorados, casados, ficantes ou até mesmo solteiros que desejam entender o amor de forma mais profunda - inclusive o amor próprio.</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('mapadoeu')">
+            <h3>💫 Mapa do Meu Eu</h3>
+            <p class="resumo">Análise profunda do seu propósito.</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('mensal')">
+            <h3>📆 Consulta Mensal</h3>
+            <p class="resumo">Um mergulho profundo nas energias do mês seguinte, trazendo clareza, direcionamento e consciência para que você atravesse o período com mais sabedoria, proteção e alinhamento espiritual.</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('premium')">
+            <h3>👑 Consulta Premium</h3>
+            <p class="resumo">Atendimento ao vivo, realizado por chamada de vídeo comigo.</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('perguntas')">
+            <h3>💡 Consulta - 5 Perguntas Específicas</h3>
+            <p class="resumo">é voltada para quem já tem dúvidas objetivas e deseja respostas claras e direcionadas.</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('terapiah')">
+            <h3>📿 Terapia Holística Integrativa</h3>
+            <p class="resumo">É um processo de alinhamento energético, emocional e espiritual, que utiliza diferentes técnicas terapêuticas de forma integrada, sempre respeitando a energia e a necessidade de cada pessoa.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="servicos">
+    <h2>Combos de Consultas :</h2>
+
+    <div class="cards">
+        <div class="card" onclick="abrirModal('comboamor')">
+            <h3>💘 Combo do Amor Consciente</h3>
+            <p>Indicado para quem deseja trabalhar padrões emocionais, autoestima e energia afetiva, equilibrando o amor interno e o amor externo.</p>
+        </div>
+
+        <div class="card" onclick="abrirModal('combomoney')">
+            <h3>💰 Combo da Prosperidade </h3>
+            <p>Consulta voltada para entender e aprofundar o âmbito profissional e financeiro da sua vida, além de trabalhar diretamente a energia do dinheiro.</p>    
+        </div>
+
+        <div class="card" onclick="abrirModal('comboauto')">
+            <h3>✨ Combo do Autoconhecimento</h3>
+            <p>Essa junção de consultas te fará perceber MUITAS coisas na sua vida, trazendo informações profundas sobre quem você é, seus padrões, seus bloqueios e seus potenciais.</p>
+        </div>
+    </div>
+</section>
+
+<section class="consultas">
+    <h2>Cursos:</h2>
+
+    <div class="consultas-cards">
+
+        <div class="consulta-card" onclick="abrirModal('padilhamel')">
+            <h3>🔮 Mentoria Mel da Padilha</h3>
+            <p class="resumo">Voltado pra você trabalhar seu poder pessoal, auto estima e amor próprio. Vamos fazer você se amar novamente, sentir FOGO em viver e paixão pela sua vida. Na mentoria desbloqueamos tudo que te trava, limita, e prende! A mentoria vai te libertar pra uma etapa de TRANSFORMAÇÃO interna.</p>
+        </div>
+
+    </div>
+</section>
+
 <section class="videos">
-    <h2>Vídeos Espirituais</h2>
+    <h2>Vídeos Espirituais:</h2>
 
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/IWOsFOjbG38"
@@ -66,34 +149,95 @@
         frameborder="0"
         allowfullscreen></iframe>
     </div>
+
 </section>
 
-<section class="depoimentos">
-    <h2>Depoimentos</h2>
+<section class="Depoimentos">
+    <h2>Recomendações:</h2>
 
     <div class="depo-cards">
 
-        <div class="depo-card">
-            <p>"Minha vida melhorou muito após a consulta."</p>
-            <span>- Maria E.</span>
-        </div>
+<div class="depo-card">
+    <p class="texto">
+        "A consulta com a Nara é conduzida com sensibilidade e orientação, trazendo reflexões que ajudam a enxergar caminhos, entender as consequências das próprias atitudes e reconhecer o que precisa ser mudado. De forma direta e assertiva, ela aponta onde direcionar a energia, evita desgastes desnecessários e auxilia no preparo para cada fase, como na Mandala de fim de ano. Mais do que prever, a consulta promove consciência, reconexão com o próprio eu e a lembrança de se priorizar ao longo da caminhada."
+    </p>
+
+    <div class="autor">
+        <img src="ana.jpg" alt="Ana Paula">
+        <span>- Ana Paula M.</span>
+    </div>
+</div>
 
 
-        <div class="depo-card">
-            <p>"Leitura extremamente precisa e acolhedora."</p>
-            <span>- Juliana R.</span>
-        </div>
+<div class="depo-card">
+    <p class="texto">
+        "Já fiz muitas consultas com a Nara como: consulta completa, mandala de fim de ano, consulta mensal e todas foram um divisor de águas na minha vida.
+A mentoria me ajudou a me reconectar com meu poder pessoal, desenvolver amor-próprio e agir com mais consciência, deixando a impulsividade de lado.
+Aprendi a me aceitar sem máscaras, a dizer “não”, criar limites e entender que o verdadeiro crescimento é vencer a si mesmo."
+    </p>
 
-        <div class="depo-card">
-            <p>"Curso maravilhoso e muito completo."</p>
-            <span>- Carla M.</span>
-        </div>
+    <div class="autor">
+        <img src="robson.jpg" alt="Robson B">
+        <span>- Robson B.</span>
+    </div>
+</div>
 
+<div class="depo-card">
+    <p class="texto">
+        "Já fiz dois anos de terapia holística com a Nara, além da mandala de fim de ano, consulta completa e o Mapa do Meu Eu. Também já acompanho o trabalho dela há muitos anos pelo Instagram.
+
+Posso dizer que é uma pessoa extremamente verdadeira, em quem vocês podem confiar. Ela leva o trabalho com muita seriedade, responsabilidade e respeito com cada atendimento.
+É uma profissional responsável e uma pessoa muito iluminada, que realmente se importa com o processo e a evolução de quem atende. Me ajudou muito e continua ajudando até hoje. Axé
+    </p>
+
+    <div class="autor">
+        <img src="giovanna.jpg" alt="Giovanna R">
+        <span>- Giovanna R.</span>
+    </div>
+</div>
     </div>
 </section>
 
+<section class="estatisticas">
+    <div class="contador-box">
+        <h2>+<span class="contador" data-target="1000">0</span></h2>
+        <p>Atendimentos realizados</p>
+    </div>
+
+    <div class="contador-box">
+        <h2>+<span class="contador" data-target="11">0</span></h2>
+        <p>Anos de experiência</p>
+    </div>
+
+    <div class="contador-box">
+        <h2>+<span class="contador" data-target="1000">0</span></h2>
+        <p>Clientes satisfeitos</p>
+    </div>
+</section>
+
+<script>
+const contadores = document.querySelectorAll('.contador');
+
+contadores.forEach(contador => {
+    const atualizar = () => {
+        const alvo = +contador.getAttribute('data-target');
+        const atual = +contador.innerText;
+        const incremento = alvo / 100;
+
+        if (atual < alvo) {
+            contador.innerText = Math.ceil(atual + incremento);
+            setTimeout(atualizar, 20);
+        } else {
+            contador.innerText = alvo;
+        }
+    };
+
+    atualizar();
+});
+</script>
+
 <section class="contato">
-    <h2>Redes Sociais</h2>
+    <h2>Redes Sociais:</h2>
 
     <div class="redes">
 
@@ -163,25 +307,587 @@ function abrirModal(tipo) {
     const titulo = document.getElementById("modalTitulo");
     const texto = document.getElementById("modalTexto");
 
-    if (tipo === "cartomancia") {
-        titulo.innerText = "Cartomancia";
-        texto.innerText = "A Cartomancia é uma leitura profunda que traz clareza emocional, espiritual e direcionamento para decisões importantes da sua vida.";
-    }
+if (tipo === "completa") {
+    titulo.innerText = "Consulta Completa!";
+    texto.innerHTML = `
 
-    if (tipo === "baralho") {
-        titulo.innerText = "Baralho Cigano";
-        texto.innerText = "O Baralho Cigano revela caminhos, energias e situações ocultas, oferecendo orientação detalhada e intuitiva.";
-    }
+                <hr>
 
-    if (tipo === "terapia") {
-        titulo.innerText = "Terapia Holística";
-        texto.innerText = "A Terapia Holística promove equilíbrio energético, harmonização espiritual e alinhamento interior.";
-    }
+        <p>✨ <strong>Vidas Passadas:</strong><br>
+        bloqueios, pactos e heranças ancestrais.</p>
 
-    if (tipo === "curso") {
-        titulo.innerText = "Curso de Baralho Cigano";
-        texto.innerText = "Curso completo para formação profissional, com teoria, prática e desenvolvimento intuitivo.";
-    }
+        <p>✨ <strong>Vida Presente:</strong><br>
+        essência, potenciais e o que trava seus caminhos.</p>
+
+        <p>✨ <strong>Sombras e Cura:</strong><br>
+        origens das dores, conselhos espirituais e medicinas para transformar.</p>
+
+        <p>✨ <strong>Chakras:</strong><br>
+        leitura completa dos 7 chakras, causas do desequilíbrio e como alinhar.</p>
+
+        <p>✨ <strong>Energia da Casa:</strong><br>
+        leitura energética de cada cômodo e qual precisa de atenção.</p>
+
+        <p>✨ <strong>Carreira e Missão:</strong><br>
+        o que você veio entregar ao mundo.</p>
+
+        <p>✨ <strong>Autoestima & Criança Interior:</strong><br>
+        traumas, curas e empoderamento.</p>
+
+        <p>✨ <strong>Mente e Autossabotagem:</strong><br>
+        pensamentos que te afastam da sua essência.</p>
+
+        <p>✨ <strong>Dinheiro:</strong><br>
+        crenças que bloqueiam a prosperidade e como reverter.</p>
+
+        <p>✨ <strong>Amizades:</strong><br>
+        o que somam ou drenam.</p>
+
+        <p>✨ <strong>Espiritualidade:</strong><br>
+        seu despertar, sua energia e sua expansão.</p>
+
+        <p>✨ <strong>Relacionamentos:</strong><br>
+        aprendizados e caminhos.</p>
+
+        <p><strong>Conselho final da consulta + 3 perguntas específicas
+        (o consulente tem direito).</strong></p>
+
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Agendar Consulta
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "geral") {
+    titulo.innerText = "Consulta Geral!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>🌗 <strong>Luz e Sombra:</strong><br>
+        identificamos seus dois lados — o que você tem de mais elevado 
+        e o que precisa ser trabalhado e curado. 
+        Aprendemos como usar sua luz a seu favor e transformar as sombras em sabedoria.</p>
+
+        <p>🧠 <strong>Essência e Mente:</strong><br>
+        revelamos como sua alma e seu racional estão agindo na sua vida. 
+        Estão alinhados? Ou existe conflito interno? 
+        Isso influencia diretamente suas escolhas, sua energia e seus resultados.</p>
+
+        <p>🃏 <strong>Mesa Real:</strong><br>
+        utilizamos as 36 cartas do Baralho Cigano abertas na mesa. 
+        Uma leitura profunda, rica em detalhes, 
+        que mostra tudo o que precisa ser visto.</p>
+
+        <p>🌍 <strong>Aspectos Externos:</strong><br>
+        saúde, família, relacionamentos, trabalho e finanças — 
+        tudo que está ao seu redor e influencia sua jornada.</p>
+
+        <p>💫 <strong>Aspectos Internos:</strong><br>
+        espiritualidade, essência, autoconhecimento e alma. 
+        Tudo aquilo que vive dentro de você e molda a forma como você sente e enxerga a vida.</p>
+
+        <p><strong>Indicada para quem deseja clareza total:</strong><br>
+        não apenas sobre o que está acontecendo,
+        mas principalmente sobre quem você é neste momento da sua vida.</p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Agendar Consulta
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "amor") {
+    titulo.innerText = "Consulta do Amor!";
+    texto.innerHTML = `
+
+        <hr>
+
+        <p>💞 <strong>O que cada um precisa aprender com o outro</strong></p>
+
+        <p>💞 <strong>O que precisa ser trabalhado internamente por ambos</strong><br>
+        para a relação evoluir</p>
+
+        <p>💞 <strong>Tendências futuras do relacionamento</strong></p>
+
+        <p>💞 <strong>Sentimentos e nível de conexão entre o casal</strong></p>
+
+        <p>💞 <strong>Autoconhecimento e sombras dentro da relação</strong></p>
+
+        <p>💞 <strong>Amor próprio e bloqueios emocionais</strong></p>
+
+        <p>💞 <strong>Cura interna:</strong><br>
+        o que você precisa transformar em si,
+        que está afetando seu relacionamento</p>
+
+        <p>💬 <strong>Você também tem direito a 5 perguntas específicas</strong>,<br>
+        para tirar dúvidas que estão apertando seu coração.</p>
+
+        <hr>
+
+        <p><strong>Essa consulta é para quem busca verdade,
+        transformação e evolução no amor.</strong></p>
+
+        <p>✨ Se você sentiu o chamado, me chame para agendar.</p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Agendar Consulta
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "mapadoeu") {
+    titulo.innerText = "Mapa do Meu Eu!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>⭐ <strong>Sua Energia Atual:</strong><br>
+        Como está o campo emocional e espiritual.<br>
+        O que está mais sensível, bloqueado ou fortalecido
+        no momento de vida que você atravessa.</p>
+
+        <p>⭐ <strong>Padrões emocionais e comportamentais:</strong><br>
+        O que se repete nos relacionamentos.<br>
+        Crenças limitantes.<br>
+        Medos inconscientes.<br>
+        Autossabotagens.</p>
+
+        <p>⭐ <strong>Bloqueios energéticos:</strong><br>
+        Onde a energia não flui.<br>
+        O que prende você ao passado.<br>
+        Culpa, medo, apego ou insegurança.</p>
+
+        <p>⭐ <strong>Potenciais e forças pessoais:</strong><br>
+        Dons naturais.<br>
+        Capacidades adormecidas.<br>
+        Pontos fortes que você ainda não reconhece em si.</p>
+
+        <p>⭐ <strong>Caminho de alinhamento:</strong><br>
+        O que precisa ser trabalhado.<br>
+        Onde focar sua energia agora.<br>
+        Atitudes internas que ajudam na cura e evolução.</p>
+
+        <hr>
+
+        <p>📄 <strong>Formato de entrega:</strong></p>
+
+        <p>✔ Documento digitalizado (PDF)<br>
+        ✔ Texto claro, profundo e objetivo<br>
+        ✔ Pode ser relido sempre que você precisar<br>
+        ✔ Linguagem acolhedora e consciente</p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Solicitar Meu Mapa
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "mensal") {
+    titulo.innerText = "Consulta Mensal!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>✨ <strong>A energia principal do mês:</strong><br>
+        — Qual vibração vai reger o mês<br>
+        — O que o espiritual quer te ensinar<br>
+        — Qual área da vida pede mais atenção</p>
+
+        <p>✨ <strong>Leitura semana a semana (4 semanas):</strong><br>
+        Para cada semana analisamos:<br>
+        — O que pode acontecer<br>
+        — O que é aconselhado<br>
+        — O que evitar<br>
+        — Qual postura favorece melhores resultados</p>
+
+        <p>✨ <strong>Alertas espirituais e energéticos:</strong><br>
+        — Possíveis desafios<br>
+        — Padrões que podem se repetir<br>
+        — Onde ter mais cuidado emocional, espiritual ou material</p>
+
+        <p>✨ <strong>Aconselhamentos espirituais personalizados:</strong><br>
+        — Como agir diante das situações<br>
+        — Qual energia sustentar<br>
+        — Onde confiar mais e onde ser mais estratégica</p>
+
+        <p>✨ <strong>Indicações energéticas para o mês:</strong><br>
+        — Banhos de ervas alinhados com sua energia<br>
+        — Ervas indicadas para limpeza, equilíbrio ou fortalecimento<br>
+        — Sugestões de práticas espirituais simples para o dia a dia</p>
+
+        <p>✨ <strong>Direcionamento final do mês:</strong><br>
+        — Qual atitude pode mudar completamente sua experiência no período<br>
+        — Qual energia você precisa sustentar para encerrar o mês com mais equilíbrio e consciência</p>
+
+        <hr>
+
+        <p><strong>Essa consulta não é apenas sobre “prever”,</strong><br>
+        mas sobre se posicionar melhor diante da vida,
+        entendendo o fluxo do mês e caminhhando com mais firmeza,
+        proteção e clareza espiritual.</p>
+
+        <p><strong>Indicada realizar essa consulta todo final de mês, para ver a energia do mês seguinte</strong><br>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Agendar Consulta
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "premium") {
+    titulo.innerText = "Consulta Premium!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>
+        Nesse formato, você participa de forma mais próxima e interativa,
+        podendo conversar, aprofundar questões e receber as orientações
+        em tempo real.
+        </p>
+
+        <p>
+        É uma consulta mais imersiva, indicada para quem deseja
+        um direcionamento mais detalhado, com troca direta de energia
+        e acompanhamento durante toda a leitura.
+        </p>
+
+        <p>
+        Ideal para quem sente que precisa ir além de respostas rápidas,
+        buscando clareza profunda, alinhamento e segurança
+        nas decisões que precisa tomar.
+        </p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Agendar Consulta
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "perguntas") {
+    titulo.innerText = "Consulta por Perguntas!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>
+        Você envia até <strong>5 perguntas específicas</strong>,
+        e o atendimento é realizado por <strong>áudio</strong>,
+        com a leitura das cartas e orientações detalhadas
+        sobre cada questão.
+        </p>
+
+        <p>
+        Ideal para situações pontuais que precisam de
+        clareza, confirmação ou direcionamento.
+        </p>
+
+        <p>
+        Uma forma objetiva e profunda de receber respostas,
+        entendendo os caminhos, os alertas e a melhor postura
+        diante do que você está vivendo.
+        </p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Enviar Minhas Perguntas
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "terapiah") {
+    titulo.innerText = "Terapia Energética Integrativa!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>🔮 <strong>Técnicas que podem ser utilizadas durante o processo:</strong></p>
+
+        <p>
+        • ThetaHealing® (acesso ao inconsciente, crenças e padrões emocionais)<br>
+        • Limpeza e alinhamento energético<br>
+        • Harmonização dos chakras<br>
+        • Terapia vibracional com cristais<br>
+        • Uso energético de ervas (banhos, defumações e orientações energéticas)<br>
+        • Leitura intuitiva e canalização espiritual<br>
+        • Reprogramação energética e emocional
+        </p>
+
+        <hr>
+
+        <p>✨ As técnicas são escolhidas de forma intuitiva e consciente,<br>
+        conforme o momento e a necessidade do consulente.</p>
+
+        <p>✨ Cada processo é único, não havendo um protocolo fixo.</p>
+
+        <hr>
+
+        <p>📌 <strong>Inclui 4 sessões</strong><br>
+        📌 <strong>Atendimento ao vivo</strong><br>
+        📌 <strong>Processo individual e personalizado</strong></p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Iniciar Meu Processo
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "comboamor") {
+    titulo.innerText = "Combo do Amor!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>
+        Esse combo ajuda a compreender o que precisa ser
+        <strong>curado, fortalecido ou transformado</strong>
+        na sua vida afetiva.
+        </p>
+
+        <p>🔮 <strong>CONSULTAS INCLUSAS:</strong></p>
+
+        <p>
+        • Consulta do Amor<br>
+        • Ritual do Amor<br>
+        • 1 hora de Terapia Holística ao vivo<br>
+        • Carta do Amor
+        </p>
+
+        <hr>
+
+        <p><strong>👉🏻 Após esse combo, você tende a se sentir:</strong></p>
+
+        <p>
+        🌹 Mais conectada(o) com seu magnetismo<br>
+        🌹 Mais amorosa(o) consigo mesma(o)<br>
+        🌹 Mais consciente do que precisa ser olhado e trabalhado na área afetiva
+        </p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Esse Combo
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "combomoney") {
+    titulo.innerText = "Combo da Prosperidade!";
+    texto.innerHTML = `
+        <hr>
+
+        <p><strong>Esse combo visa:</strong></p>
+
+        <p>
+        💰 Compreender sua relação com o dinheiro<br>
+        💰 Desbloquear crenças limitantes<br>
+        💰 Abrir caminhos para mais fluidez, organização e prosperidade
+        </p>
+
+        <hr>
+
+        <p>🔮 <strong>CONSULTAS INCLUSAS:</strong></p>
+
+        <p>
+        • Consulta da Prosperidade<br>
+        • Magia do Dinheiro<br>
+        • Documento em PDF com passos práticos indicados pelas cartas,<br>
+        para serem aplicados nos próximos 3 meses,<br>
+        auxiliando na organização, fluidez e atração financeira
+        </p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Ativar Minha Prosperidade
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "comboauto") {
+    titulo.innerText = "Combo do Autoconhecimento!";
+    texto.innerHTML = `
+        <hr>
+
+        <p>
+        Consequentemente, promove melhora do seu bem-estar,
+        da sua energia e harmonização dos chakras.
+        </p>
+
+        <p>
+        ✨ Essa consulta é um verdadeiro carinho consigo mesma(o) 🌻🌼
+        </p>
+
+        <hr>
+
+        <p>🔮 <strong>CONSULTAS INCLUSAS:</strong></p>
+
+        <p>
+            <p>• Consulta Completa<p>
+            <p>• Mapa do Meu Eu<p>
+            <p>• Envio de Reiki<p>
+        <p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Cuidar da Minha Energia
+            </a>
+        </div>
+    `;
+}
+
+if (tipo === "padilhamel") {
+    titulo.innerText = "Mentoria Individual Espiritual";
+    texto.innerHTML = `
+
+        <p>
+        A mentoria é um processo profundo, <strong>INDIVIDUALIZADO</strong> e espiritual,
+        voltado para quem deseja transformar sua energia, curar feridas internas,
+        ativar o amor-próprio e se reconectar com sua essência.
+        </p>
+
+        <hr>
+
+        <p>
+        • São 4 encontros comigo ao vivo, no Zoom, onde vou escutar você,
+        seus sentimentos, suas emoções, sua história e seu passado.
+        </p>
+
+        <p>
+        Uma escuta acolhedora e amorosa.
+        </p>
+
+        <p>
+        • Conhecendo suas profundezas, iremos trabalhar em cima delas,
+        onde vou te <strong>LEVAR O CAMINHO</strong> para você despertar
+        sua potência, sua vitalidade e força.
+        </p>
+
+        <hr>
+
+        <h3>Aula 1 – Escuta acolhedora e despertar da consciência</h3>
+
+        <p>
+        Um espaço seguro onde a pessoa é ouvida com alma.
+        Iniciamos o processo de cura acessando a história,
+        a criança interior e os sentimentos que ainda precisam de luz.
+        </p>
+
+        <p><strong>TÓPICOS:</strong></p>
+
+        <ul>
+            <li>Acolhimento e escuta profunda das emoções, dores e vivências</li>
+            <li>Perguntas reflexivas conectadas aos 4 chakras principais</li>
+            <li>Chakra Básico: você se sente segura? Sente que tem estrutura?</li>
+            <li>Chakra Sacral: como você lida com suas emoções, prazer e criatividade?</li>
+            <li>Chakra Cardíaco: como estão seus afetos, dores antigas e seu coração?</li>
+            <li>Chakra Frontal: o que sua intuição vem dizendo que você não está ouvindo?</li>
+            <li>Conversa profunda sobre sua história de vida: traumas, repetições e padrões</li>
+            <li>A criança interior e sentimentos esquecidos ou negligenciados</li>
+            <li>Relacionamentos passados, dores amorosas e vínculos energéticos</li>
+        </ul>
+
+        <hr>
+
+        <h3>Aula 2 – Amor próprio e reconexão com o valor pessoal</h3>
+
+        <p>
+        Aqui começamos a reconstruir a base do amor por si mesma,
+        ativando a força interna.
+        </p>
+
+        <p><strong>TÓPICOS:</strong></p>
+
+        <ul>
+            <li>O que é amor-próprio de verdade? (além da estética)</li>
+            <li>Como você tem se tratado? Como tem deixado que te tratem?</li>
+            <li>Rompendo padrões de desvalorização e abandono afetivo</li>
+            <li>Resgate da sua identidade e do seu merecimento</li>
+            <li>Exercícios espirituais e práticos para fortalecer o amor-próprio</li>
+            <li>Como ativar o poder pessoal de forma energética e consciente</li>
+        </ul>
+
+        <hr>
+
+                <h3>Aula 3 – Auto estima, alegria de viver e cuidados com corpo e alma</h3>
+
+        <p>
+        Uma aula para florescer. O brilho interno é ativado aqui.
+        </p>
+
+        <p><strong>TÓPICOS:</strong></p>
+
+        <ul>
+            <li>Cultivando paixão por si mesma</li>
+            <li>Como viver com leveza, alegria e autenticidade</li>
+            <li>A autoestima no dia a dia: escolhas, voz ativa e limites</li>
+            <li>Ativação de energia da beleza e da presença</li>
+            <li>Rituais e cuidados: banho de ervas, autocuidado energético e físico</li>
+            <li>Como se olhar com amor, desejo e admiração</li>
+        </ul>
+
+        <hr>
+
+        <h3>Aula 4 – Plano de ação poderosa e prática, onde organizamos a nova versão da pessoa</h3>
+
+        <p>
+        Uma aula poderosa e prática, onde organizamos a nova versão da pessoa.
+        </p>
+
+        <p><strong>TÓPICOS:</strong></p>
+
+        <ul>
+            <li>Entrega do plano de ação individualizado com:</li>
+            <li>Cuidados com a mente (pensamentos, crenças)</li>
+            <li>Cuidados com o corpo (hábitos, prazer, rotina)</li>
+            <li>Cuidados com o espírito (proteção, conexão, espiritual)</li>
+            <li>Cuidados com a casa (ambiente, limpeza, energética, organização)</li>
+            <li>Revisão do processo vivido durante a mentoria</li>
+            <li>Conversa sobre os avanços em amor-próprio e autoestima</li>
+            <li>Encerramento com ritual de consagração da nova fase</li>
+        </ul>
+
+        <hr>
+
+                <strong><h3>O que vai mudar em você depois da Mentoria Mel da Padilha?</h3></strong>
+
+            <ul>
+                <p>
+        🌿 Após a Mentoria Mel Padilha, sua alma encontraráa força que sempre esteve escondida, e sua luz interior brilhará com intensidade, abrindo portas para um novo recomeço.<br>
+        🔥 Você vai renascer em si mesma, como a fênix que ressurge das cinzas, pronta para conquistar seu espaço e viver com autencidade e poder.<br>
+        🌺 A Mentoria Mel Padilha é o caminho onde você cura feridas, desperta sua essência e dança livre no ritmo da sua verdadeira felicidade.<br>
+        🌙 Depois dessa jornada, seu coração vai bater alinhado com sua missão, e a coragem será seu farol nas noites mais escuras.<br>
+        ✨ Você não será mais a mesma -- será a versão mais forte, leve e verdadeira de você, pronta para transformar o mundo ao seu redor.                                  
+        </p>
+            </ul>
+
+            <hr>
+
+            <p><strong>Aluna Déborah recebendo seu certificado de conclusão do curso! Venha você também se inscrever no curso e ter uma nova profissão! 💘🌹</strong></p>
+
+        <img src="certificado.jpg" class="img-mentoria">
+
+        <p>Te aguardo nessa jornada de amor e transformação.</p>
+        <p><strong>Com amor, Nara. 🌹</strong></p>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Iniciar Minha Mentoria
+            </a>
+        </div>
+
+    `;
+}
 
     document.getElementById("modal").style.display = "flex";
 }
@@ -191,8 +897,23 @@ function fecharModal() {
 }
 </script>
 
+<script>
+function toggleDescricao(card) {
+    card.classList.toggle("ativo");
+}
+</script>
+
 <footer>
-    <p>© 2026 Lúcius L. Gomes - Todos os direitos reservados</p>
+    <p>
+        © 2026 @meuladomistico - Todos os direitos reservados
+    </p>
+
+    <p class="footer-extra">
+        Dev Responsável: 
+        <a href="https://www.instagram.com/luciuslg22/" target="_blank">
+            Lúcius L. Gomes
+        </a> 
+    </p>
 </footer>
 
 </body>

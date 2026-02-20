@@ -400,13 +400,13 @@ footer a:hover {
 .estatisticas {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
     padding: 80px 0;
     text-align: center;
 }
 
 .contador-box h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #ffd700;
 }
 

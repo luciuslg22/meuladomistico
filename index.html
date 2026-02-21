@@ -39,7 +39,7 @@ Através do meu trabalho, te ajudo a enxergar padrões, compreender momentos e t
 
         <div class="card" onclick="toggleDescricao(this)">
             <h3>🃏 Mentoria Espiritual </h3>
-            <p>Curso para aprender do zero como se conectar com sua espiritualidade interior sem depender de terceiros.</p>    
+            <p>É um acompanhamento individual ao vivo para promover cura emocional, fortalecimento interior e alinhamento energético.</p>    
         </div>
 
         <div class="card" onclick="toggleDescricao(this)">
@@ -48,7 +48,7 @@ Através do meu trabalho, te ajudo a enxergar padrões, compreender momentos e t
         </div>
 
         <div class="card" onclick="toggleDescricao(this)">
-            <h3>📚 Curso de Baralho Cigano</h3>
+            <h3>📚 Cursos</h3>
             <p>Formação completa para iniciantes e avançados.</p>
         </div>
     </div>
@@ -134,6 +134,17 @@ Através do meu trabalho, te ajudo a enxergar padrões, compreender momentos e t
             <p class="resumo">Voltado pra você trabalhar seu poder pessoal, auto estima e amor próprio. Vamos fazer você se amar novamente, sentir FOGO em viver e paixão pela sua vida. Na mentoria desbloqueamos tudo que te trava, limita, e prende! A mentoria vai te libertar pra uma etapa de TRANSFORMAÇÃO interna.</p>
         </div>
 
+        <div class="consulta-card" onclick="abrirModal('baralho')">
+            <h3>🃏 Baralho Cigano</h3>
+            <p class="resumo">Esse não é apenas um curso.
+É um acompanhamento profundo, individual e personalizado no Baralho Cigano..</p>
+        </div>
+
+        <div class="consulta-card" onclick="abrirModal('mentoriacurso')">
+            <h3>⭐ Mentoria Espiritual</h3>
+            <p class="resumo">Curso para aprender do zero como se conectar com sua espiritualidade interior sem depender de terceiros.</p>
+        </div>
+
     </div>
 </section>
 
@@ -200,7 +211,7 @@ Posso dizer que é uma pessoa extremamente verdadeira, em quem vocês podem conf
 
 <section class="estatisticas">
     <div class="contador-box">
-        <h2>+<span class="contador" data-target="1800">0</span></h2>
+        <h2>+<span class="contador" data-target="3000">0</span></h2>
         <p>Atendimentos realizados</p>
     </div>
 
@@ -210,7 +221,7 @@ Posso dizer que é uma pessoa extremamente verdadeira, em quem vocês podem conf
     </div>
 
     <div class="contador-box">
-        <h2>+<span class="contador" data-target="1800">0</span></h2>
+        <h2>+<span class="contador" data-target="3000">0</span></h2>
         <p>Clientes satisfeitos</p>
     </div>
 </section>
@@ -749,6 +760,7 @@ if (tipo === "comboauto") {
 if (tipo === "padilhamel") {
     titulo.innerText = "Mentoria Individual Espiritual";
     texto.innerHTML = `
+            <hr>
 
         <p>
         A mentoria é um processo profundo, <strong>INDIVIDUALIZADO</strong> e espiritual,
@@ -872,11 +884,6 @@ if (tipo === "padilhamel") {
             </ul>
 
             <hr>
-
-            <p><strong>Aluna Déborah recebendo seu certificado de conclusão do curso! Venha você também se inscrever no curso e ter uma nova profissão! 💘🌹</strong></p>
-
-        <img src="certificado.jpg" class="img-mentoria">
-
         <p>Te aguardo nessa jornada de amor e transformação.</p>
         <p><strong>Com amor, Nara. 🌹</strong></p>
 
@@ -886,6 +893,161 @@ if (tipo === "padilhamel") {
             </a>
         </div>
 
+    `;
+}
+
+if (tipo === "baralho") {
+    titulo.innerText = "Curso de Baralho Cigano";
+    texto.innerHTML = `
+            <hr>
+
+        <p>
+        O curso tem duração de <strong>2 a 3 meses</strong>, com
+        <strong>1 aula por semana</strong>, 100% ao vivo comigo.
+        </p>
+
+        <p>
+        As aulas são <strong>individuais (particulares)</strong> —
+        não é turma, não é grupo e não são aulas gravadas.
+        </p>
+
+        <hr>
+
+        <p>
+        Por ser um formato exclusivo, o ensino é direcionado exatamente para você:
+        </p>
+
+        <ul>
+            <li>Suas dúvidas</li>
+            <li>Suas facilidades</li>
+            <li>Suas inseguranças</li>
+            <li>Suas limitações</li>
+            <li>Sua forma única de sentir e interpretar as cartas</li>
+        </ul>
+
+        <p>
+        Eu acompanho de perto todo o processo, orientando, corrigindo
+        e ajustando o aprendizado aula após aula.
+        </p>
+
+        <p>
+        Você não fica sozinho(a). Existe presença, troca real e prática guiada.
+        </p>
+
+        <hr>
+
+        <h3>O curso é dividido em 3 níveis:</h3>
+
+        <p><strong>🔸 Nível Básico</strong></p>
+        <p>
+        Fundamentos do Baralho Cigano, estrutura das cartas,
+        significados, combinações iniciais e desenvolvimento da percepção.
+        </p>
+
+        <p><strong>🔸 Nível Intermediário</strong></p>
+        <p>
+        Aprofundamento das leituras, métodos de tiragem,
+        interpretação prática, segurança na análise e conexão intuitiva.
+        </p>
+
+        <p><strong>🔸 Nível Profissional</strong></p>
+        <p>
+        Postura de atendimento, ética, direcionamento ao consulente,
+        mandalas, leituras completas e preparação para atuar profissionalmente.
+        </p>
+
+        <hr>
+
+        <h3>O que você recebe no curso:</h3>
+
+        <ul>
+            <li>Aulas ao vivo individuais comigo</li>
+            <li>Mentoria personalizada em Baralho Cigano</li>
+            <li>Exercícios práticos para desenvolver leitura e intuição</li>
+            <li>Livro em PDF escrito por mim</li>
+            <li>Certificado ao final do curso</li>
+            <li>Assistência e acompanhamento durante todo o processo</li>
+        </ul>
+
+        <p>
+        É um caminho de aprendizado com consciência, profundidade e verdade,
+        respeitando o seu tempo e a sua sensibilidade com as cartas.
+        </p>
+
+        <hr>
+
+        <p><strong>Aluna Déborah recebendo seu certificado de conclusão do curso! Venha você também se inscrever no curso e ter uma nova profissão! 💘🌹</strong></p>
+
+        <img src="certificado.jpg" class="img-mentoria">
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Me Inscrever
+            </a>
+        </div>
+
+    `;
+}
+
+if (tipo === "mentoriacurso") {
+    titulo.innerText = "Mentoria Espiritual";
+    texto.innerHTML = `
+        <hr>
+
+        <p>
+        Dentro de cada uma dessas aulas, vou detalhar o que você vai aprender
+        no curso da <strong>Mentoria Espiritual</strong> 👉🏼
+        </p>
+
+        <hr>
+
+        <p><strong>AULA 1:</strong> Como se conectar com sua essência e, consequentemente, com o lado espiritual?</p>
+
+        <p><strong>AULA 2:</strong> Como cuidar da sua energia.</p>
+
+        <p><strong>AULA 3:</strong> Como escutar sua intuição e aumentar sua liberdade espiritual.</p>
+
+        <p><strong>AULA 4:</strong> Como se conectar com a Umbanda/Espiritualidade no cotidiano.</p>
+
+        <p><strong>AULA 5:</strong> Como abrir caminhos no relacionamento e no profissional.</p>
+
+        <p><strong>AULA 6:</strong> Como orar para ser escutado.</p>
+
+        <p><strong>AULA 7:</strong> Estudo sobre magia natural.</p>
+
+        <p><strong>AULA 8:</strong> Altar – criando o seu.</p>
+
+        <p><strong>AULA 9:</strong> Estudo sobre ervas.</p>
+
+        <p><strong>AULA 10:</strong> Como cuidar da energia da sua casa.</p>
+
+        <p><strong>AULA 11:</strong> Como se conectar com os orixás e entidades.</p>
+
+        <p><strong>AULA 12:</strong> Como identificar se o terreiro é para você.</p>
+
+        <p><strong>AULA 13:</strong> O que vai acontecer caso trabalhe no terreiro?</p>
+
+        <p><strong>AULA 14:</strong> Tudo sobre incorporação e dicas para quem está em desenvolvimento mediúnico.</p>
+
+        <p><strong>AULA 15:</strong> Linhas de esquerda e direita na Umbanda.</p>
+
+        <p><strong>AULA 16:</strong> Estudo profundo sobre Pombas Giras e Exus.</p>
+
+        <p><strong>AULA 17:</strong> Firmezas e oferendas na Umbanda.</p>
+
+        <p><strong>AULA 18:</strong> Tipos de mediunidade e como cuidar.</p>
+
+        <p><strong>AULA 19:</strong> Como fortalecer a ligação com suas entidades e o lado espiritual.</p>
+
+        <p><strong>AULA 20:</strong> Como aumentar seu amor próprio e autoestima.</p>
+
+        <hr>
+
+        <div class="modal-botao">
+            <a href="https://wa.link/uywxjl" target="_blank" class="btn-modal">
+                Quero Saber Mais
+            </a>
+        </div>
     `;
 }
 

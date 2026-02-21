@@ -397,12 +397,31 @@ footer a {
 footer a:hover {
     color: #ffd700; /* dourado quando passar o mouse */
 }
+
 .estatisticas {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 80px 0;
+    padding: 80px 20px;
     text-align: center;
+    flex-wrap: wrap; /* ESSENCIAL */
+}
+
+@media (max-width: 768px) {
+
+    .estatisticas {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+.contador-box {
+    min-width: 120px;
+}
+
+.contador-box h2 {
+    font-size: clamp(28px, 8vw, 40px);
 }
 
 .contador-box h2 {

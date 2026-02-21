@@ -107,9 +107,9 @@ section {
 }
 
 footer {
-    padding: 20px;
-    font-size: 14px;
-    background: #0c0c0c;
+    padding: 10px;
+    font-size: 12px;
+    background: #080808;
 }
 
 /* RESPONSIVO */
@@ -390,12 +390,8 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #ffd900;
     text-decoration: none;
-}
-
-footer a:hover {
-    color: #ffd700; /* dourado quando passar o mouse */
 }
 
 .estatisticas {
@@ -500,4 +496,12 @@ footer a:hover {
     display: block;
     margin: 20px auto; /* centraliza */
     border-radius: 12px; /* opcional */
+}
+
+
+.logomarca img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
